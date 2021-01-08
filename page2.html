@@ -3,7 +3,7 @@
 <html lang="fr">
 
     <head>
-        <title>A la française-Oh my food-Openclassrooms</title>
+        <title>La palette du gôut-Oh my food-Openclassrooms</title>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="style2.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -15,26 +15,93 @@
     <body>
         <!--Header main page-->
 
-        <header>
-            <i class="fas fa-arrow-left"></i>
+        <header class="header_restaurant">
+            <a class="arrow_return"href="index.html"><i class="fas fa-arrow-left"></i></a>
             <img class="website_logo" src="Maquettes Ohmyfood/images/logo/ohmyfood@2x.svg" alt="logo du site">
         </header>
 
-        <!--Section1 Localisation-->
+        <!--Section menu-->
 
-        <section id="localisation"></section>
-
-        <!--Section2 presentation-->
-
-        <section id="presentation"></section>
-
-        <!--Section1 restaurant-->
-
-        <section id="restaurant"></section>
+        <section id="menu">
+            <div class="menu_container">
+                <div class="menu_theme">
+                    <img 
+                        /*src="Maquettes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"*/
+                        alt="la palette du gout"
+                    >
+                    <div class="menu_head_details">
+                        <header class="title_restaurant">
+                            <h1>La palette du goût</h1>
+                            <i class="far fa-heart heart_logo"></i>
+                        </header>
+                        <article class="menu_details">
+                            <h4>Entrées</h4>
+                            <div class="menu_tag_price">
+                                <p class="menu_details_title">Fricassée d'escargot</p>
+                                <p class="menu_details_title2">Au piment d'Espelette 25€</p>
+                            </div>
+                            <div class="menu_tag_price">
+                                <p class="menu_details_title">Foie gras de canard mi-cuit</p>
+                                <p class="menu_details_title2">Et ses copeaux de truffe noire 35€</p>  
+                            </div>
+                            <div class="menu_tag_price">
+                                <p class="menu_details_title">Oeuf au plat</p>
+                                <p class="menu_details_title2">Assaisonné à la truffe sur lit de caviar 20€</p>
+                            </div>
+                        </article>
+                        <article class="menu_details">
+                            <h4>Plats</h4>
+                            <div class="menu_tag_price">
+                                <p class="menu_details_title">Filet de boeuf aux herbes</p>
+                                <p class="menu_details_title2">Accompagné de sa ribambelle de légumes 40€</p>
+                            </div>
+                            <div class="menu_tag_price">
+                                <p class="menu_details_title">Parmentier de queue de boeuf</p>
+                                <p class="menu_details_title2">À la truffe noire sur sa purée de panais 35€</p>
+                            </div>
+                            <div class="menu_tag_price">
+                                <p class="menu_details_title">Filet de turbot</p>
+                                <p class="menu_details_title2">Aux agrumes 44€</p>
+                            </div>
+                        </article>
+                        <article class="menu_details">
+                            <h4>Desserts</h4>
+                            <div class="menu_tag_price">
+                                <p class="menu_details_title">Paris-Brest</p>
+                                <p class="menu_details_title2">Revisité 18€</p>
+                            </div>
+                            <div class="menu_tag_price">
+                                <p class="menu_details_title">Macaron au chocolat d'exception </p>
+                                <p class="menu_details_title2">Et glace à la vanille de Madagascar 22€</p>
+                            </div>
+                            <div class="menu_tag_price">
+                                <p class="menu_details_title">Mousse au chocolat</p>
+                                <p class="menu_details_title2">Au piment d'Espelette et à la truffe noire 23€</p>
+                            </div>
+                        </article>
+                        <button class="button_register">
+                            <span class="register">Commander</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!--Footer-->
 
-        <footer></footer>
+        <footer>
+            <div class="footer_div_container">
+                <div class="footer_div1">
+                    <h3 class="footer_head_title">ohmyfood</h3>
+                    <ul>
+                        <li><i class="fas fa-utensils fork"></i><a href="#" class="footer_link">Proposer un restaurant</a></li>
+                        <li><i class="fas fa-hands-helping hands"></i><a href="#" class="footer_link">Devenir partenaire</a></li>
+                        <li><a href="#" class="footer_Link">Mentions légales</a></li>
+                        <li><a href="mailto:ohmyfood@openclassrooms.com" class="footer_Link">Contact</a></li>
+                    </ul> 
+                </div>
+            </div>    
+         </footer>       
     </body>
 
 </html>

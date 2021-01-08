@@ -1,0 +1,79 @@
+/*Général*/
+*
+{
+    margin:0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+    font-family:'Roboto',sans-serif; 
+}
+
+a
+{
+  color: black;
+}
+
+.header_restaurant
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+.website_logo{
+    padding-left:50px ;
+}
+
+/*Footer*/
+
+footer
+{
+  max-width: 1850px;
+  margin: auto;
+  background-color:rgb(47, 46, 46);
+ 
+}
+
+.footer_div_container
+{
+  color:rgba(255, 255, 255, 0.979);  
+  max-width: 1500px;
+  margin: auto;
+  display: grid;
+  grid-template-columns:1fr;
+}
+
+.footer_head_title
+{
+    font-family: 'Shrikhand',sans-serif;
+    padding: 20px 0 0 10px;
+}
+
+footer ul
+{  
+  padding:10px 0 10px 10px;
+  display: grid; 
+  row-gap: 10px;
+}
+
+footer ul a
+{
+    color: rgba(255, 255, 255, 0.979);
+}
+.fork
+{
+    padding-right: 20px;
+}
+.hands
+{
+    padding-right: 13px;
+}
+@media screen and (max-width:1000px)
+{
+  
+.footer_div_container
+{
+  padding: 0 0 20px 20px;
+}
+
+}
