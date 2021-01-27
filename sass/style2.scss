@@ -64,7 +64,7 @@ body{
 .menu_container
 {
   display: grid;
-  grid-row: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   overflow: hidden;
   img{
     width: 100%;
@@ -76,7 +76,7 @@ body{
 .menu_head_details
 {
   display:grid;
-  grid-column: 1fr;
+  grid-template-columns: 1fr;
   row-gap: 20px;
   background-color: rgb(241, 241, 241);
   border-radius: 40px 40px 0 0;
@@ -146,8 +146,9 @@ body{
   .underline
   {
     height: 5px;
-    width: 40px;
+    width: 45px;
     border-bottom: 3px solid $tertiaire;
+    margin-left: 20px;
   }
 }
 
