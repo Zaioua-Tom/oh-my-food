@@ -46,17 +46,22 @@ body{
   
   display: flex;
   justify-content: space-around;
-  padding: 20px;
-}
-.website_logo
-{
-  margin: auto;
+  padding: 10px;
+
 }
 .arrow_return{
   
-  color:rgb(47, 46, 46);
-  font-size:20px;
-}
+    color:rgb(47, 46, 46);
+    font-size:20px;
+    padding: 20px;
+    }
+.main_header
+    {
+    margin: auto;
+    font-family: 'Shrikhand',sans-serif;
+    }
+
+
 /*section menu*/
 #menu
 {
