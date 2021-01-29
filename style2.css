@@ -52,9 +52,6 @@ a {
 }
 
 .menu_head_details {
-  display: grid;
-  grid-template-columns: 1fr;
-  row-gap: 20px;
   background-color: #f1f1f1;
   border-radius: 40px 40px 0 0;
   margin-top: -50px;
@@ -62,8 +59,8 @@ a {
 }
 @media (min-width: 1250px) {
   .menu_head_details {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 20px;
     padding: 50px;
   }
 }
@@ -75,11 +72,11 @@ a {
 }
 .title_restaurant h1 {
   font-family: "Shrikhand", sans-serif;
-  font-size: 30px;
 }
 .title_restaurant .heart_logo {
   padding-right: 30px;
-  font-size: 30px;
+  font-size: 20px;
+  margin: auto;
   color: grey;
   cursor: pointer;
 }
@@ -112,6 +109,7 @@ a {
   text-transform: uppercase;
   padding: 0 20px;
   font-weight: 300;
+  margin-top: 30px;
 }
 .menu_details .underline {
   height: 5px;
@@ -125,7 +123,7 @@ a {
   display: flex;
   padding: 15px;
   border-radius: 15px;
-  margin: 20px 20px;
+  margin: 15px 15px;
   box-shadow: 0 0 15px #0807072e;
   overflow: hidden;
   cursor: pointer;
@@ -185,7 +183,7 @@ a {
 
 .menu_details_title {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 16px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -240,7 +238,9 @@ a {
 }
 
 form {
-  margin: auto auto 50px auto;
+  display: flex;
+  justify-content: center;
+  margin: 50px auto;
 }
 @media (min-width: 1250px) {
   form {
