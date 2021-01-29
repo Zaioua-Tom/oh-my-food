@@ -22,16 +22,18 @@ a {
 .header_restaurant {
   display: flex;
   justify-content: space-around;
-  padding: 20px;
-}
-
-.website_logo {
-  margin: auto;
+  padding: 10px;
 }
 
 .arrow_return {
   color: #2f2e2e;
   font-size: 20px;
+  padding: 20px;
+}
+
+.main_header {
+  margin: auto;
+  font-family: "Shrikhand", sans-serif;
 }
 
 /*section menu*/
