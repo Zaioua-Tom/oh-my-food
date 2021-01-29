@@ -82,10 +82,12 @@ a {
 }
 /*Header*/
 .main_header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
+  padding: 1rem;
+}
+.main_header h1 {
+  font-family: "Shrikhand", sans-serif;
+  text-align: center;
+  margin: 0;
 }
 
 /*section1*/
@@ -166,39 +168,48 @@ a {
 }
 
 .operation_container {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 50px;
+  display: grid;
+  grid-template-rows: 1fr repeat(3, 80px);
+  row-gap: 30px;
+  margin: 50px 20px;
 }
-@media (min-width: 1250px) {
+@media (min-width: 700px) {
+  .operation_container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 1500px) {
   .operation_container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding-bottom: 50px;
   }
 }
 
 .operation_head_title {
   display: flex;
-  justify-content: center;
-  padding: 50px 290px 0px 20px;
+  justify-content: start;
 }
-@media (min-width: 1250px) {
+@media (min-width: 700px) {
+  .operation_head_title {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (min-width: 1500px) {
   .operation_head_title {
     grid-column: 1/-1;
     display: flex;
     justify-content: center;
-    padding-bottom: 50px;
-    padding-left: 280px;
   }
 }
 
 .operation_list {
-  width: 380px;
-  height: 85px;
-  margin: 15px auto;
   border-radius: 20px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   background-color: #F2F2F2;
   box-shadow: 0 0 15px #0807072e;
@@ -207,6 +218,14 @@ a {
 .operation_list:hover {
   transform: scale(1.015);
   background-color: rgba(147, 86, 220, 0.15);
+}
+@media (min-width: 700px) {
+  .operation_list {
+    display: flex;
+    width: 400px;
+    height: 80px;
+    margin: auto;
+  }
 }
 
 .number_list {
@@ -217,7 +236,7 @@ a {
   border-radius: 100%;
   height: 25px;
   width: 25px;
-  margin-left: -30px;
+  margin-left: -25px;
 }
 
 .number_list_color {
@@ -225,20 +244,8 @@ a {
 }
 
 .logo_color {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: #6d6d6d;
-  margin: 0 35px;
   font-size: 20px;
-}
-
-.logo_color1 {
-  margin: 0 40px;
-}
-
-.logo_color3 {
-  margin: 0 32px;
 }
 
 .logo_color:hover {
@@ -246,7 +253,7 @@ a {
 }
 
 .explenation_title {
-  margin-right: 50px;
+  margin-right: 40px;
 }
 
 .explenation_title2 {
